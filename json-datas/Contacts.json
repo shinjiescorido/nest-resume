@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+          "name" : "Julius Pepito",
+          "role" : "Project Manager",
+          "company": "Bluefrog",
+          "mobile" : "+639165622775",
+          "email" : "pepitojulius.career@gmail.com"
+        },
+        {
+          "name" : "Eleonore Hermosa",
+          "role" : "Human Resource",
+          "company": "Collabera",
+          "mobile" : "+639052382297",
+          "email" : "eleonore.hermosa@collaberadigital.com"
+        },
+        {
+          "name" : "Joseph Dan Alinsug",
+          "role" : "CEO",
+          "company": "Simpr Solutions",
+          "mobile" : "+639177105717",
+          "email" : "osephdanalinsug@hotmail.com"
+        }
+    ]
+}

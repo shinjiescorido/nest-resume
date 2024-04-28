@@ -1,0 +1,18 @@
+{
+    "name": "Shinji P. Escorido",
+    "email": "shinji.escorido@gmail.com",
+    "age": 37,
+    "mobile": "+63-966-356-1354",
+      "skills": [
+        "NodeJS",
+        "VueJS",
+        "React",
+        "AWS",
+        "Unit-testing",
+        "CI/CD",
+        "GIT",
+        "PHP",
+        "SQL/NoSQL",
+        "MICROSERVICES"
+    ]
+}
