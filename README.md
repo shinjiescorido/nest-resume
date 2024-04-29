@@ -5,7 +5,16 @@
 1. Docker
 2. Docker-compose
 3. Git
+4. .env file
+```
+MONGODB_DB_HOST=
+MONGODB_DB_NAME=
+MONGODB_LOCAL_PORT=
+MONGODB_DOCKER_PORT=
 
+NODE_LOCAL_PORT=
+NODE_DOCKER_PORT=
+```
 ## Running the app
 
 ```bash
@@ -14,14 +23,14 @@ $ git clone https://github.com/shinjiescorido/nest-resume.git
 
 # run docker-compose
 $ docker-compose up -d
-
-# lint
-$ npm run lint
 ```
 
 ## Test
 
 ```bash
+# lint
+$ npm run lint
+
 # unit tests
 $ npm run test
 ```
