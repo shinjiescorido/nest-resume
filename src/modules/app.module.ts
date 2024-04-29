@@ -1,7 +1,7 @@
 /**
  * Imports the `Module` decorator from `@nestjs/common` for defining NestJS modules.
  */
-import { Module } from '@nestjs/common';
+import { Module  } from '@nestjs/common';
 
 /**
  * Imports the `MongooseModule` from `@nestjs/mongoose` for interacting with MongoDB.
