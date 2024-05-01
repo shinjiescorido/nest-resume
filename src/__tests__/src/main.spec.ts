@@ -28,6 +28,13 @@ jest.mock('@nestjs/core', () => ({
   },
 }));
 
+// Manually set environment variables
+process.env.MONGODB_DB_HOST = 'mongodb';
+process.env.MONGODB_DB_NAME = 'resume';
+process.env.MONGODB_LOCAL_PORT = '27015';
+process.env.MONGODB_DOCKER_PORT = '27015';
+process.env.NODE_LOCAL_PORT = '3000';
+process.env.NODE_DOCKER_PORT = '3000';
 /**
  * This describes the test suite for the `main.ts` file.
  */
