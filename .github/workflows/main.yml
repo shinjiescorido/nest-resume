@@ -3,7 +3,6 @@ name: Lint and Test
 on:
   push:
     branches:
-      - master  # Change this to your main branch name
       - develop  # Change this to your develop branch name
   pull_request:
     branches:
@@ -24,9 +23,16 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
+      
       - name: Run ESLint
         run: npm run lint  # Adjust this command according to your linting setup
 
       - name: Run tests
+        env:
+          MONGODB_DB_HOST: ${{ secrets.MONGODB_DB_HOST }}
+          MONGODB_DB_NAME: ${{ secrets.MONGODB_DB_NAME }}
+          MONGODB_LOCAL_PORT: ${{ secrets.MONGODB_LOCAL_PORT }}
+          MONGODB_DOCKER_PORT: ${{ secrets.MONGODB_DOCKER_PORT }}
+          NODE_LOCAL_PORT: ${{ secrets.NODE_LOCAL_PORT }}
+          NODE_DOCKER_PORT: ${{ secrets.NODE_DOCKER_PORT }}
         run: npm test
