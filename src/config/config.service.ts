@@ -11,19 +11,6 @@ dotenv.config();
 @Injectable()
 export class ConfigService {
   // Store parsed environment variables
-  private readonly envConfig: Record<string, string>;
-
-  /**
-   * Creates an instance of ConfigService.
-   */
-  constructor() {
-    // Read environment variables from .env file
-    const envFilePath = '.env';
-    const envFile = fs.readFileSync(envFilePath);
-    // Parse the .env file contents
-    this.envConfig = dotenv.parse(envFile);
-  }
-
   /**
    * Get the value of a specific environment variable.
    * @param key - The name of the environment variable.
