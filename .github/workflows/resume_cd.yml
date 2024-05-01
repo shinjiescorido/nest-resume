@@ -37,6 +37,10 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+<<<<<<< HEAD
             cd /home/nest-resume
+=======
+            cd /home
+>>>>>>> 4941e60856699b62c5238213991700355249bf98
             git pull origin master
             docker-compose up -d --build
