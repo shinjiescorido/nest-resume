@@ -2,6 +2,7 @@ version: "3"
 
 services:
   mongodb:
+    container_name: mongodb
     build:
       context: .
       dockerfile: dockerfiles/Dockerfile-mongodb
@@ -9,6 +10,7 @@ services:
     ports:
       - $MONGODB_LOCAL_PORT:$MONGODB_DOCKER_PORT
   app:
+    container_name: resume_app
     depends_on:
       - mongodb
     build:

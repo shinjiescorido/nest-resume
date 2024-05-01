@@ -38,5 +38,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/nest-resume
-            git pull origin master
-            docker-compose up -d --build
+            sudo git pull origin master
+            sudo docker-compose --build
+            sudo docker-compose up -d
